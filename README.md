@@ -24,7 +24,7 @@ EcoConexiones es una plataforma social diseñada para conectar a personas apasio
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/eco-conexiones.git
+git clone https://github.com/flguaman/EcoConexiones
 
 # Instalar dependencias
 npm install
