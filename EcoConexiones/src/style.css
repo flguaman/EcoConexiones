@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  background-color: #f0fdf4;
+}
+
+@layer components {
+  .eco-button {
+    @apply bg-eco-600 text-white px-4 py-2 rounded-lg hover:bg-eco-700 transition-colors duration-200 shadow-sm;
+  }
+  
+  .eco-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-eco-100;
+  }
+  
+  .eco-tag {
+    @apply bg-eco-100 text-eco-800 text-sm px-2 py-1 rounded-md;
+  }
+}
