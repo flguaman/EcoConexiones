@@ -6,8 +6,12 @@ export interface EcoActivity {
 }
 
 export const calculatePoints = (activities: EcoActivity[]): number => {
-  return activities.reduce((total, activity) => total + activity.points, 0)
+  return activities.reduce((total, activity) => {
+    // Ajusta la lógica de cálculo de puntos según tus necesidades
+    return total + activity.points * 1.2; // Ejemplo: multiplicar por 1.2
+  }, 0);
 }
+
 
 export const getLevel = (points: number): number => {
   return Math.floor(points / 100) + 1
