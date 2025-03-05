@@ -5,9 +5,6 @@ export interface EcoActivity {
   timestamp: number
 }
 
-export const calculatePoints = (activities: EcoActivity[]): number => {
-  return activities.reduce((total, activity) => total + activity.points, 0)
-}
 
 export const getLevel = (points: number): number => {
   return Math.floor(points / 100) + 1
