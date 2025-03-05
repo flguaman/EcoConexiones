@@ -21,8 +21,3 @@ export const validatePassword = (password: string): { isValid: boolean; errors: 
     errors.push('La contraseña debe contener al menos un carácter especial');
   }
 
-  return {
-    isValid: errors.length === 0,
-    errors
-  };
-}
